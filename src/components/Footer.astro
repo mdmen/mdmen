@@ -1,5 +1,7 @@
 ---
-const year = new Date().getFullYear();
+const year = new Date().getFullYear().toString();
 ---
 
-<footer>&copy; {year} Dmitry Menov</footer>
+<footer>
+  &copy; <time datetime={year}>{year}</time> Dmitry Menov
+</footer>
